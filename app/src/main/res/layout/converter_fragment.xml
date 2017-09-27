@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/converter_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorCard"
+              android:orientation="vertical"
+              android:padding="12dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/converter"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlue"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_exchangeOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/from"
+                    android:inputType="phone"
+                    android:textColor="@color/colorWhite"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinner_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/colorBackground"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/exchange_icon"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_exchangeTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/to"
+                    android:inputType="number"
+                    android:textColor="@color/colorWhite"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinner_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/colorBackground"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

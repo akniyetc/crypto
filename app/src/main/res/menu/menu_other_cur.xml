@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_usd"
+        android:title="@string/usd"
+        android:checked="true"/>
+    <item
+        android:id="@+id/item_EUR"
+        android:title="@string/eur"
+        android:checked="true"/>
+    <item
+        android:id="@+id/item_rub"
+        android:title="@string/rub"/>
+    <item
+        android:id="@+id/item_gbp"
+        android:title="@string/gbp"/>
+    <item
+        android:id="@+id/item_kzt"
+        android:title="@string/kzt"/>
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_coin"
+        android:title="@string/search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/search_icon"/>
+
+    <item
+        android:id="@+id/item_converter"
+        android:title="@string/converter"
+        app:showAsAction="always"
+        android:icon="@drawable/converter_icon"/>
+
+    <item
+        android:id="@+id/item_usd_default"
+        android:title="@string/usd_short"
+        app:showAsAction="always"/>
+
+
+    <!--<item-->
+        <!--android:id="@+id/item_EUR"-->
+        <!--android:title="@string/eur"/>-->
+    <!--<item-->
+        <!--android:id="@+id/item_rub"-->
+        <!--android:title="@string/rub"/>-->
+    <!--<item-->
+        <!--android:id="@+id/item_gbp"-->
+        <!--android:title="@string/gbp"/>-->
+
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.unionOfMiners.android.union">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/union_logo"
+        android:label="@string/app_name"
+        tools:replace="android:icon"
+        android:name="com.unionOfMiners.android.union.PrefsApplication"
+        android:roundIcon="@mipmap/union_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.unionOfMiners.android.union.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.unionOfMiners.android.union.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="com.unionOfMiners.android.union.DetailActivity"
+            android:parentActivityName="com.unionOfMiners.android.union.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.unionOfMiners.android.union.AnimActivity"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="31d5a60b033cdd2dd6a7be51e8b92933aede8b50" />
+    </application>
+
+</manifest>

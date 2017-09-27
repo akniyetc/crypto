@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_catalog"
+        android:enabled="true"
+        android:icon="@mipmap/catalog"
+        android:title="@string/catalog"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_stat"
+        android:enabled="true"
+        android:icon="@mipmap/stats"
+        android:title="@string/analytics"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@mipmap/portfel"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@mipmap/settings"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom" />
+</menu>
